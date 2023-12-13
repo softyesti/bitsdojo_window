@@ -36,7 +36,6 @@ class MacOSWindow extends DesktopWindow {
   }
 
   double get scaleFactor {
-    //TODO: implement
     return 1;
   }
 
@@ -89,7 +88,6 @@ class MacOSWindow extends DesktopWindow {
     if (!isValidHandle(handle, "set minSize")) return;
     _minSize = newSize;
     if (newSize == null) {
-      //TODO - add handling for setting minSize to null
       return;
     }
     setMinSize(handle!, _minSize!.width.toInt(), _minSize!.height.toInt());
@@ -99,7 +97,6 @@ class MacOSWindow extends DesktopWindow {
     if (!isValidHandle(handle, "set maxSize")) return;
     _maxSize = newSize;
     if (newSize == null) {
-      //TODO - add handling for setting maxSize to null
       return;
     }
     setMaxSize(handle!, _maxSize!.width.toInt(), _maxSize!.height.toInt());

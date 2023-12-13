@@ -160,7 +160,6 @@ class WinWindow extends WinDesktopWindow {
   set minSize(Size? newSize) {
     _minSize = newSize;
     if (newSize == null) {
-      //TODO - add handling for setting minSize to null
       return;
     }
     native.setMinSize(_minSize!.width.toInt(), _minSize!.height.toInt());
@@ -169,7 +168,6 @@ class WinWindow extends WinDesktopWindow {
   set maxSize(Size? newSize) {
     _maxSize = newSize;
     if (newSize == null) {
-      //TODO - add handling for setting maxSize to null
       return;
     }
     native.setMaxSize(_maxSize!.width.toInt(), _maxSize!.height.toInt());

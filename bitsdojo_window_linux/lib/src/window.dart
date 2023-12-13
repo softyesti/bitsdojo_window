@@ -57,7 +57,6 @@ class GtkWindow extends DesktopWindow {
 
   @override
   bool get isVisible {
-    //TODO: implement
     return true;
   }
 
@@ -180,7 +179,6 @@ class GtkWindow extends DesktopWindow {
 
     _minSize = newSize;
     if (newSize == null) {
-      //TODO - add handling for setting minSize to null
       return;
     }
     native.setMinSize(
@@ -193,7 +191,6 @@ class GtkWindow extends DesktopWindow {
 
     _maxSize = newSize;
     if (newSize == null) {
-      //TODO - add handling for setting maxSize to null
       return;
     }
     native.setMaxSize(

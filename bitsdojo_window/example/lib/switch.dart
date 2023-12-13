@@ -272,7 +272,7 @@ class RoundedFlatButton extends StatelessWidget {
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12.0),
               side: const BorderSide(color: Colors.white)),
-          primary: color ?? Colors.grey[900],
+          backgroundColor: color ?? Colors.grey[900],
           padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
           textStyle: TextStyle(
               color: textColor ?? Colors.white,
